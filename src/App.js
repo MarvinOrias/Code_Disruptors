@@ -1,6 +1,6 @@
 import "./styles.css";
 import logo1 from './images/foxhound.png';
-import logo2 from './images/ff7.gif';
+import logo2 from './images/game.jpg';
 import logo3 from './images/fox.png';
 
 export default function App() {
