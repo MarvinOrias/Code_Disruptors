@@ -1,0 +1,36 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+body {
+  background-color: #333333;
+}
+
+.h2{
+  color: #D2A157;
+}
+
+.grid{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.image{
+  height: 7.6cm;
+  width: 7.6cm;
+  margin-right: 10px;
+}
+
+.image:active{
+  animation: imgclick 1s;
+}
+
+@keyframes imgclick{
+  0%{
+    transform: scale(0, 0);
+  }
+  100%{
+    transform: scale(1.5, 1);
+  }
+}
