@@ -1,27 +1,23 @@
 import "./styles.css";
-import logo1 from './images/foxhound.png';
-import logo2 from './images/game.jpg';
-import logo3 from './images/fox.png';
+import Home from './components/Home';
+import React from "react";
+
 
 export default function App() {
 
   return (
-    <div className="App">
-      <h2 className="h2">Gallery</h2>
-      <div className="grid">
-        
-        <img src={logo1} 
-        alt="image1"
-        className="image"/>
-
-        <img src={logo2} 
-        alt="image1"
-        className="image"/>
-        
-        <img src={logo3} 
-        alt="image1"
-        className="image"/>
+    <div>
+      <div className="navpage" style={{backgroundColor: '#343434', height: '55px', marginBottom: '50px'}}>
+        <div><h3 className="h2-home">Gallery</h3></div>
+        <div style={{marginLeft: 'auto'}}><a href="" style={{textDecoration: 'none'}}><h3 className="h3-home">Home</h3></a></div>
       </div>
+
+      <div className="home-page">
+      
+      <Home name1='FoxHound' name2='Gamer Vibe' name3='Fox logo'
+      name4='Mega X' name5='X' name6='Cloud' name7='Diablos' name8='Rathalos'
+      name9='Gaming' />
+      </div>    
     </div>
   );
 }
